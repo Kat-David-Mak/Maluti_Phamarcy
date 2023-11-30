@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+    
+body{
+    min-height: 100vh;
+}
+    
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: blue;
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50%;
+}
+    
+.nav-links li {
+    list-style: none;
+}
+    
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+    
+.nav-links a:hover:not(.active) {
+    background-color: darkblue;
+}
+    
+.nav-links li a.active {
+    background-color: darkblue;
+}
+   
+/* Cards */
+
+.header{
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+    
+.header h1{
+    font-size: 40px;
+}
+
+.products{
+    width: 100%;
+    align-self: center;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product{
+    position: relative;
+    background-color: #00CCFF;
+    width: 350px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2px;
+    transition: .3s;
+    display:inline-block;
+    margin-left: 75px;
+}
+
+.product:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.image{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width:100%;
+    height: 60%;
+    display: grid;
+    place-content: center;
+}
+
+.image img{
+    width: 240px;
+    }
+        
+.description{
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+    }
+
+.medName h3{
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.medPrice span{
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    border: 3px solid #73AD21;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10%;
+}
+    
+.product p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.order-button{
+    border-radius: 2px;
+    border: none;
+    background-color: #45a049;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+    
+.order-button:hover{
+    transform: scale(1.1);
+    background-color: #4caf50;
+}
+
+.back{
+    margin-left: 5%;
+    font-size: 20px;
+    list-style-type: none;
+    margin-bottom: 2%;
+}
+
+.inside{
+    background-color: blue;
+    width: 10%;
+    color: white;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+} 
+
+.messages{
+    color:#337983;
+    margin-left: 5%;
+}
+
+/* Forms*/
+
+.first-box {
+  margin-left: 25%;
+  width: 50%;
+  border: none solid #66FF66;
+  padding: 10px;
+  color: #337983;
+  margin-bottom: 5%;
+}
+
+label{
+    color: #00CCFF;
+    font-size: 900;
+}
+
+
+.rounded-input {
+  padding:10px;
+  border-radius:10px;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email], input[type=date], select {
+  padding:10px;
+  border-radius:5px;
+  width: 100%;
+  border: 1px solid black;    
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;  
+  }
+  
+  input[type=submit]:hover {
+    background-color: darkblue;
+  }
+
+lable{
+    color: black;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.pay{
+    margin-left: 5%;
+}
+
+
+.pay-button{
+    margin-left: 5%;
+    padding: 15px 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: #45a049;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+    
+.pay-button:hover{
+    transform: scale(1.1);
+    background-color: #4caf50;
+}
+
+
+.messages{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  color: #337983;
+  margin-bottom: 2%;
+  text-align: center;    
+}
+/* Table  */
+
+.meds h1 {
+    color: #337983;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+table:hover{
+    cursor: pointer;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
